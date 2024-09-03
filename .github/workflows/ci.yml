@@ -1,12 +1,12 @@
-name: CI workflows
+name: CI workflow
 
 on:
     push:
         branches:
             - main
     pull_request:
-            branches:
-                - main
+        branches:
+            - main
 
 jobs:
     test:
@@ -19,7 +19,7 @@ jobs:
         - name: Set up Python
         uses: actions/setup-python@v2
         with:
-             python-version: '3.12'
+          python-version: '3.12'
 
         - name: Install Dependencies
           run: pip install -r requirents.txt
