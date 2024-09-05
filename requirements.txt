@@ -1,2 +1,3 @@
 # Requirements for your package of the code/software
 # python == version 12.2.1
+pytest
